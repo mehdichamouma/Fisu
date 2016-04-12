@@ -5,7 +5,6 @@
 //  Created by Mehdi Chamouma on 11/04/2016.
 //  Copyright © 2016 Mehdi Chamouma. All rights reserved.
 //
-
 import XCTest
 @testable import Fisu
 
@@ -21,16 +20,14 @@ class FisuTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testInitialization() {
+        let moc = App.getMoc()
+        App.initialize()
+        App.initialize()
+        XCTAssertEqual(Day.findAll(moc).count, 7)
+        XCTAssertEqual(Activity.findAll(moc).count, 6)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
     }
     
 }

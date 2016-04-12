@@ -10,12 +10,30 @@
 		914BAEA51CBBA6D10060F98E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEA41CBBA6D10060F98E /* AppDelegate.swift */; };
 		914BAEA81CBBA6D20060F98E /* Fisu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEA61CBBA6D20060F98E /* Fisu.xcdatamodeld */; };
 		914BAEAA1CBBA6D20060F98E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEA91CBBA6D20060F98E /* MasterViewController.swift */; };
-		914BAEAC1CBBA6D20060F98E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEAB1CBBA6D20060F98E /* DetailViewController.swift */; };
-		914BAEAF1CBBA6D20060F98E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914BAEAD1CBBA6D20060F98E /* Main.storyboard */; };
+		914BAEAC1CBBA6D20060F98E /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEAB1CBBA6D20060F98E /* ActivityDetailViewController.swift */; };
 		914BAEB11CBBA6D20060F98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914BAEB01CBBA6D20060F98E /* Assets.xcassets */; };
 		914BAEB41CBBA6D20060F98E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914BAEB21CBBA6D20060F98E /* LaunchScreen.storyboard */; };
 		914BAEBF1CBBA6D20060F98E /* FisuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEBE1CBBA6D20060F98E /* FisuTests.swift */; };
 		914BAECA1CBBA6D20060F98E /* FisuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAEC91CBBA6D20060F98E /* FisuUITests.swift */; };
+		914BAF1E1CBBB13B0060F98E /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF101CBBB13B0060F98E /* Place+CoreDataProperties.swift */; };
+		914BAF1F1CBBB13B0060F98E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF111CBBB13B0060F98E /* Place.swift */; };
+		914BAF201CBBB13B0060F98E /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF121CBBB13B0060F98E /* Day+CoreDataProperties.swift */; };
+		914BAF211CBBB13B0060F98E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF131CBBB13B0060F98E /* Day.swift */; };
+		914BAF221CBBB13B0060F98E /* Restaurant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF141CBBB13B0060F98E /* Restaurant+CoreDataProperties.swift */; };
+		914BAF231CBBB13B0060F98E /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF151CBBB13B0060F98E /* Restaurant.swift */; };
+		914BAF241CBBB13B0060F98E /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF161CBBB13B0060F98E /* Activity+CoreDataProperties.swift */; };
+		914BAF251CBBB13B0060F98E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF171CBBB13B0060F98E /* Activity.swift */; };
+		914BAF281CBBB13B0060F98E /* Speaker+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF1A1CBBB13B0060F98E /* Speaker+CoreDataProperties.swift */; };
+		914BAF291CBBB13B0060F98E /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF1B1CBBB13B0060F98E /* Speaker.swift */; };
+		914BAF2A1CBBB13B0060F98E /* Accomodation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF1C1CBBB13B0060F98E /* Accomodation+CoreDataProperties.swift */; };
+		914BAF2B1CBBB13B0060F98E /* Accomodation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF1D1CBBB13B0060F98E /* Accomodation.swift */; };
+		914BAF2D1CBBBC8D0060F98E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF2C1CBBBC8D0060F98E /* App.swift */; };
+		914BAF351CBBF5FC0060F98E /* NSManageObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF341CBBF5FC0060F98E /* NSManageObjectHelper.swift */; };
+		914BAF371CBC1F610060F98E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914BAF361CBC1F610060F98E /* Main.storyboard */; };
+		914BAF3A1CBC1F940060F98E /* ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF381CBC1F940060F98E /* ProgramTableViewCell.swift */; };
+		914BAF3B1CBC1F940060F98E /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF391CBC1F940060F98E /* ProgramTableViewController.swift */; };
+		914BAF3E1CBD01BE0060F98E /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF3D1CBD01BE0060F98E /* DayCell.swift */; };
+		914BAF401CBD02090060F98E /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF3F1CBD02090060F98E /* DayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +54,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		914BAEA11CBBA6D10060F98E /* Fisu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fisu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		914BAEA11CBBA6D10060F98E /* Fisu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Fisu.app; path = "/Users/mehdi/Desktop/Fisu/build/Debug-iphoneos/Fisu.app"; sourceTree = "<absolute>"; };
 		914BAEA41CBBA6D10060F98E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		914BAEA71CBBA6D20060F98E /* Fisu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fisu.xcdatamodel; sourceTree = "<group>"; };
 		914BAEA91CBBA6D20060F98E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		914BAEAB1CBBA6D20060F98E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		914BAEAE1CBBA6D20060F98E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		914BAEAB1CBBA6D20060F98E /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
 		914BAEB01CBBA6D20060F98E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		914BAEB31CBBA6D20060F98E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		914BAEB51CBBA6D20060F98E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		914BAEBA1CBBA6D20060F98E /* FisuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		914BAEBA1CBBA6D20060F98E /* FisuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FisuTests.xctest; path = "/Users/mehdi/Desktop/Fisu/build/Debug-iphoneos/FisuTests.xctest"; sourceTree = "<absolute>"; };
 		914BAEBE1CBBA6D20060F98E /* FisuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisuTests.swift; sourceTree = "<group>"; };
 		914BAEC01CBBA6D20060F98E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		914BAEC51CBBA6D20060F98E /* FisuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FisuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		914BAEC51CBBA6D20060F98E /* FisuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FisuUITests.xctest; path = "/Users/mehdi/Desktop/Fisu/build/Debug-iphoneos/FisuUITests.xctest"; sourceTree = "<absolute>"; };
 		914BAEC91CBBA6D20060F98E /* FisuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FisuUITests.swift; sourceTree = "<group>"; };
 		914BAECB1CBBA6D20060F98E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		914BAF101CBBB13B0060F98E /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Place+CoreDataProperties.swift"; path = "Models/Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		914BAF111CBBB13B0060F98E /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Models/Place.swift; sourceTree = "<group>"; };
+		914BAF121CBBB13B0060F98E /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataProperties.swift"; path = "Models/Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		914BAF131CBBB13B0060F98E /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Day.swift; path = Models/Day.swift; sourceTree = "<group>"; };
+		914BAF141CBBB13B0060F98E /* Restaurant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Restaurant+CoreDataProperties.swift"; path = "Models/Restaurant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		914BAF151CBBB13B0060F98E /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = Models/Restaurant.swift; sourceTree = "<group>"; };
+		914BAF161CBBB13B0060F98E /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Activity+CoreDataProperties.swift"; path = "Models/Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		914BAF171CBBB13B0060F98E /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = Models/Activity.swift; sourceTree = "<group>"; };
+		914BAF1A1CBBB13B0060F98E /* Speaker+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Speaker+CoreDataProperties.swift"; path = "Models/Speaker+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		914BAF1B1CBBB13B0060F98E /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Speaker.swift; path = Models/Speaker.swift; sourceTree = "<group>"; };
+		914BAF1C1CBBB13B0060F98E /* Accomodation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Accomodation+CoreDataProperties.swift"; path = "Models/Accomodation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		914BAF1D1CBBB13B0060F98E /* Accomodation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Accomodation.swift; path = Models/Accomodation.swift; sourceTree = "<group>"; };
+		914BAF2C1CBBBC8D0060F98E /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		914BAF341CBBF5FC0060F98E /* NSManageObjectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManageObjectHelper.swift; sourceTree = "<group>"; };
+		914BAF361CBC1F610060F98E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		914BAF381CBC1F940060F98E /* ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewCell.swift; sourceTree = "<group>"; };
+		914BAF391CBC1F940060F98E /* ProgramTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
+		914BAF3D1CBD01BE0060F98E /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		914BAF3F1CBD02090060F98E /* DayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,31 +120,26 @@
 				914BAEA31CBBA6D10060F98E /* Fisu */,
 				914BAEBD1CBBA6D20060F98E /* FisuTests */,
 				914BAEC81CBBA6D20060F98E /* FisuUITests */,
-				914BAEA21CBBA6D10060F98E /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		914BAEA21CBBA6D10060F98E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				914BAEA11CBBA6D10060F98E /* Fisu.app */,
-				914BAEBA1CBBA6D20060F98E /* FisuTests.xctest */,
-				914BAEC51CBBA6D20060F98E /* FisuUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		914BAEA31CBBA6D10060F98E /* Fisu */ = {
 			isa = PBXGroup;
 			children = (
+				914BAF0F1CBBB1100060F98E /* Models */,
 				914BAEA41CBBA6D10060F98E /* AppDelegate.swift */,
 				914BAEA91CBBA6D20060F98E /* MasterViewController.swift */,
-				914BAEAB1CBBA6D20060F98E /* DetailViewController.swift */,
-				914BAEAD1CBBA6D20060F98E /* Main.storyboard */,
+				914BAEAB1CBBA6D20060F98E /* ActivityDetailViewController.swift */,
 				914BAEB01CBBA6D20060F98E /* Assets.xcassets */,
 				914BAEB21CBBA6D20060F98E /* LaunchScreen.storyboard */,
+				914BAF361CBC1F610060F98E /* Main.storyboard */,
+				914BAF3D1CBD01BE0060F98E /* DayCell.swift */,
+				914BAF3F1CBD02090060F98E /* DayController.swift */,
+				914BAF381CBC1F940060F98E /* ProgramTableViewCell.swift */,
+				914BAF391CBC1F940060F98E /* ProgramTableViewController.swift */,
 				914BAEB51CBBA6D20060F98E /* Info.plist */,
 				914BAEA61CBBA6D20060F98E /* Fisu.xcdatamodeld */,
+				914BAF2C1CBBBC8D0060F98E /* App.swift */,
 			);
 			path = Fisu;
 			sourceTree = "<group>";
@@ -129,6 +160,34 @@
 				914BAECB1CBBA6D20060F98E /* Info.plist */,
 			);
 			path = FisuUITests;
+			sourceTree = "<group>";
+		};
+		914BAF0F1CBBB1100060F98E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				914BAF331CBBE9B40060F98E /* CoreData */,
+				914BAF111CBBB13B0060F98E /* Place.swift */,
+				914BAF131CBBB13B0060F98E /* Day.swift */,
+				914BAF151CBBB13B0060F98E /* Restaurant.swift */,
+				914BAF171CBBB13B0060F98E /* Activity.swift */,
+				914BAF1B1CBBB13B0060F98E /* Speaker.swift */,
+				914BAF1D1CBBB13B0060F98E /* Accomodation.swift */,
+				914BAF341CBBF5FC0060F98E /* NSManageObjectHelper.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		914BAF331CBBE9B40060F98E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				914BAF101CBBB13B0060F98E /* Place+CoreDataProperties.swift */,
+				914BAF121CBBB13B0060F98E /* Day+CoreDataProperties.swift */,
+				914BAF141CBBB13B0060F98E /* Restaurant+CoreDataProperties.swift */,
+				914BAF161CBBB13B0060F98E /* Activity+CoreDataProperties.swift */,
+				914BAF1A1CBBB13B0060F98E /* Speaker+CoreDataProperties.swift */,
+				914BAF1C1CBBB13B0060F98E /* Accomodation+CoreDataProperties.swift */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +278,7 @@
 				Base,
 			);
 			mainGroup = 914BAE981CBBA6D10060F98E;
-			productRefGroup = 914BAEA21CBBA6D10060F98E /* Products */;
+			productRefGroup = 914BAE981CBBA6D10060F98E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -235,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914BAF371CBC1F610060F98E /* Main.storyboard in Resources */,
 				914BAEB41CBBA6D20060F98E /* LaunchScreen.storyboard in Resources */,
 				914BAEB11CBBA6D20060F98E /* Assets.xcassets in Resources */,
-				914BAEAF1CBBA6D20060F98E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +321,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914BAF231CBBB13B0060F98E /* Restaurant.swift in Sources */,
 				914BAEA81CBBA6D20060F98E /* Fisu.xcdatamodeld in Sources */,
 				914BAEA51CBBA6D10060F98E /* AppDelegate.swift in Sources */,
+				914BAF291CBBB13B0060F98E /* Speaker.swift in Sources */,
+				914BAF2D1CBBBC8D0060F98E /* App.swift in Sources */,
+				914BAF2B1CBBB13B0060F98E /* Accomodation.swift in Sources */,
+				914BAF351CBBF5FC0060F98E /* NSManageObjectHelper.swift in Sources */,
+				914BAF211CBBB13B0060F98E /* Day.swift in Sources */,
+				914BAF3B1CBC1F940060F98E /* ProgramTableViewController.swift in Sources */,
 				914BAEAA1CBBA6D20060F98E /* MasterViewController.swift in Sources */,
-				914BAEAC1CBBA6D20060F98E /* DetailViewController.swift in Sources */,
+				914BAF3E1CBD01BE0060F98E /* DayCell.swift in Sources */,
+				914BAF1F1CBBB13B0060F98E /* Place.swift in Sources */,
+				914BAF401CBD02090060F98E /* DayController.swift in Sources */,
+				914BAF251CBBB13B0060F98E /* Activity.swift in Sources */,
+				914BAF281CBBB13B0060F98E /* Speaker+CoreDataProperties.swift in Sources */,
+				914BAF1E1CBBB13B0060F98E /* Place+CoreDataProperties.swift in Sources */,
+				914BAF241CBBB13B0060F98E /* Activity+CoreDataProperties.swift in Sources */,
+				914BAF3A1CBC1F940060F98E /* ProgramTableViewCell.swift in Sources */,
+				914BAF221CBBB13B0060F98E /* Restaurant+CoreDataProperties.swift in Sources */,
+				914BAF2A1CBBB13B0060F98E /* Accomodation+CoreDataProperties.swift in Sources */,
+				914BAEAC1CBBA6D20060F98E /* ActivityDetailViewController.swift in Sources */,
+				914BAF201CBBB13B0060F98E /* Day+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +378,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		914BAEAD1CBBA6D20060F98E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				914BAEAE1CBBA6D20060F98E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		914BAEB21CBBA6D20060F98E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
