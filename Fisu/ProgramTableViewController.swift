@@ -7,20 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 class ProgramTableViewController: UITableViewController {
     
     var activities = [Activity?]()
     var day:Day?
+    var mode: String = ""
+    var moc: NSManagedObjectContext?
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        loadActivities()
+    }
     func loadActivities() {
-        let appDelg = UIApplication.sharedApplication().delegate as! AppDelegate
-        let moc = appDelg.managedObjectContext
-        activities += Activity.findAllByDay(moc, day: day!)
+        print(mode)
+        if(day == nil) {
+            activities = Activity.findSelectedActivities(moc!)
+        }
+        else {
+            activities = Activity.findAllByDay(moc!, day: day!)
+        }
     }
     override func viewDidLoad() {
-        print("1234")
         super.viewDidLoad()
+        let appDelg = UIApplication.sharedApplication().delegate as! AppDelegate
+        moc = appDelg.managedObjectContext
         print("ok")
         loadActivities()
     }
@@ -66,14 +78,21 @@ class ProgramTableViewController: UITableViewController {
     }
     
     func pressed(sender: UIButton!) {
-        let activity = activities[sender.tag]
-        let alertView = UIAlertView();
-        alertView.addButtonWithTitle("Cool :)");
-        alertView.title = (activity?.name)!
-        alertView.message = activity!.isSelected ? "Activité enlevée de votre programme" : "Activité ajouté à votre programme";
-        activity?.isSelected = !(activity!.isSelected)
-        //alertView.show();
-        self.tableView.reloadData()
+        if let activity = activities[sender.tag] {
+            let alertView = UIAlertView();
+            alertView.addButtonWithTitle("Cool :)");
+            alertView.title = (activity.name)!
+            alertView.message = activity.isSelected ? "Activité enlevée de votre programme" : "Activité ajouté à votre programme";
+            activity.isSelected = !(activity.isSelected)
+            do {
+                try moc!.save()
+                loadActivities()
+                self.tableView.reloadData()
+            }
+            catch {
+            
+            }
+        }
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

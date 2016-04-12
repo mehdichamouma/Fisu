@@ -80,6 +80,12 @@ class Activity: NSManagedObject {
         return self._findAll(moc, request: req)
     }
     
+    class func findSelectedActivities(moc: NSManagedObjectContext) -> [Activity?] {
+        let req = NSFetchRequest(entityName: self.entityName)
+        req.predicate = NSPredicate(format: "selected == true")
+        return self._findAll(moc, request: req)
+    }
+    
     class func initData(moc: NSManagedObjectContext, days: [Day], speakers: [Speaker], places: [Place]) -> [Activity] {
         //[(name, descr, speaker, place, day, bh, bm, eh, em)]
         let activities: [(String, String, Speaker, Place, Day, Int, Int, Int, Int)] = [

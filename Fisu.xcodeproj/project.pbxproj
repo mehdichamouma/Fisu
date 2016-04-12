@@ -34,6 +34,7 @@
 		914BAF3B1CBC1F940060F98E /* ProgramTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF391CBC1F940060F98E /* ProgramTableViewController.swift */; };
 		914BAF3E1CBD01BE0060F98E /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF3D1CBD01BE0060F98E /* DayCell.swift */; };
 		914BAF401CBD02090060F98E /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF3F1CBD02090060F98E /* DayController.swift */; };
+		914BAF421CBD0F3D0060F98E /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914BAF411CBD0F3D0060F98E /* RootController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		914BAF391CBC1F940060F98E /* ProgramTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTableViewController.swift; sourceTree = "<group>"; };
 		914BAF3D1CBD01BE0060F98E /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 		914BAF3F1CBD02090060F98E /* DayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
+		914BAF411CBD0F3D0060F98E /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				914BAEB01CBBA6D20060F98E /* Assets.xcassets */,
 				914BAEB21CBBA6D20060F98E /* LaunchScreen.storyboard */,
 				914BAF361CBC1F610060F98E /* Main.storyboard */,
+				914BAF411CBD0F3D0060F98E /* RootController.swift */,
 				914BAF3D1CBD01BE0060F98E /* DayCell.swift */,
 				914BAF3F1CBD02090060F98E /* DayController.swift */,
 				914BAF381CBC1F940060F98E /* ProgramTableViewCell.swift */,
@@ -334,6 +337,7 @@
 				914BAF3E1CBD01BE0060F98E /* DayCell.swift in Sources */,
 				914BAF1F1CBBB13B0060F98E /* Place.swift in Sources */,
 				914BAF401CBD02090060F98E /* DayController.swift in Sources */,
+				914BAF421CBD0F3D0060F98E /* RootController.swift in Sources */,
 				914BAF251CBBB13B0060F98E /* Activity.swift in Sources */,
 				914BAF281CBBB13B0060F98E /* Speaker+CoreDataProperties.swift in Sources */,
 				914BAF1E1CBBB13B0060F98E /* Place+CoreDataProperties.swift in Sources */,
